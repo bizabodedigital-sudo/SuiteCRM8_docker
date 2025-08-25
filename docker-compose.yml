@@ -16,9 +16,7 @@ services:
       - ./docker/config/apache/apache-selfsigned.crt:/etc/ssl/certs/apache-selfsigned.crt
       - ./docker/config/apache/apache-selfsigned.key:/etc/ssl/private/apache-selfsigned.key
       #APACHE Log Folder
-      - ./logs/apache:/var/log/apache2/  
       #PHP Log Folder
-      - ./logs/php:/var/log/php/
     env_file:
       - environment/sample.env
     ports:
